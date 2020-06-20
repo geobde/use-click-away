@@ -1,0 +1,40 @@
+{
+  "name": "use-click-away",
+  "version": "1.0.1",
+  "description": "React hook that triggers a callback when user clicks outside the element.",
+  "author": {
+    "name": "George Bardi",
+    "email": "geobde@gmail.com",
+    "url": "https://twitter.com/geobde"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "react-hooks",
+    "click outside",
+    "onclickoutside"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir .",
+    "bump": "npm version",
+    "example": "cd example && yarn install && yarn package",
+    "prepublishOnly": "yarn build",
+    "watch": "nodemon --watch src --exec \"yarn build\""
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "nodemon": "^2.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geobde/use-click-away"
+  },
+  "bugs": {
+    "url": "https://github.com/geobde/use-click-away/issues"
+  }
+}

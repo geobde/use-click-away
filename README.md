@@ -32,8 +32,6 @@ useClickAway(clickRef, onClickOutside);
 
 - [React](https://reactjs.org/) - A JavaScript library for building user interfaces
 
-- [use-custom-hook](https://github.com/colbyfayock/use-custom-hook) - A starter template for creating a new React Hook
-
 ## License
 
 MIT Licensed. Copyright (c) George Bardi 2020.

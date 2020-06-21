@@ -1,4 +1,4 @@
-## React custom hook.
+## useClickAway.
 
 When you want a callback invoked when a DOM element was not clicked.
 

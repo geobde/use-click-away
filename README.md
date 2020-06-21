@@ -13,14 +13,10 @@ npm i use-click-away
 ```
 import {useClickAway} from 'use-click-away';
 
-const onClickOutside = () => {
-   setCount( count + 1);
-};
-
 const [count, setCount] = React.useState(0);
 const clickRef = React.useRef('');
-useClickAway(clickRef, onClickOutside); 
-   
+useClickAway(clickRef, () => setCount( count + 1)); 
+
 <div ref={clickRef}>
   DOM clicked 0 times!
 </div>

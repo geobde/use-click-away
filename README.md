@@ -22,7 +22,7 @@ useClickAway(clickRef, () => setCount( count + 1));
 </div>
 
 ```
-[![Edit use-click-away](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/use-click-away-0vtmy?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit use-click-away](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/use-click-away-ipxgh?fontsize=14&hidenavigation=1&theme=dark)
 
 ## Built With
 

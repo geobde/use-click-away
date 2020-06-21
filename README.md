@@ -1,6 +1,6 @@
 ## useClickAway.
 
-When you want a callback invoked when a DOM element was not clicked.
+React hook to detect click or touch events outside an element.
 
 ## Installation
 

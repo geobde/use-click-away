@@ -2,6 +2,8 @@
 
 React hook to detect click or touch events outside an element.
 
+![Alt text](https://github.com/geobde/use-click-away/blob/master/animation.gif "Search")
+
 ## Installation
 
 ```

@@ -1,71 +1,57 @@
-## useClickAway.
+# React hook to detect click or touch events
 
-React hook to detect click or touch events outside an element.
+React hook `useClickAway()` that reacts to clicks outside the bound element, and calls the expression that is passed in when this event is detected.
 
-![Alt text](https://github.com/geobde/use-click-away/blob/master/animation.gif "Search")
+Suppose you're working on a Modal component that renders a dialog box, and you wish to close the modal if the user clicks away this is the ideal scenario for `useClickAway()` custom hook.
 
 ## Installation
 
-```
-npm i use-click-away
+Using `npm`:
+
+```bash
+npm i use-click-away --save
 ```
 
 ## Usage
 
-### Modal Example
+Import the hook:
+
+```javascript
+import { useClickAway } from "use-click-away";
+```
+
+### Full example
 
 ```
-import React from "react";
-import { useClickAway } from "use-click-away";
-
 export default () => {
   const [modal, setModal] = React.useState(false);
+  const clickRef = React.useRef("");
 
-  const onClickOutside = () => {
-    setModal(false);
-  };
+  useClickAway(clickRef, () => {
+     setModal(false);
+  });
+
   return (
     <div className="container">
       <button onClick={() => setModal(true)}>Show Property</button>
-      <Modal
+      {modal && <Modal
         modal={modal}
         setModal={setModal}
         onClickOutside={onClickOutside}
-      />
+      />}
     </div>
   );
 };
 
-const Modal = ({ modal, setModal, onClickOutside }) => {
-  const clickRef = React.useRef("");
-  useClickAway(clickRef, onClickOutside);
-
-  return (
-    modal && (
-      <div className="shadow">
-        <div ref={clickRef} className="modal">
-          <iframe
-            width="800"
-            height="600"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-74.00082707405092%2C40.73125075736151%2C-73.99181485176088%2C40.73703099445825&amp;layer=mapnik&amp;marker=40.73414093868234%2C-73.99632096290588"
-          />
-
-          <div onClick={() => setModal(false)} className="close">
-            X
-          </div>
-        </div>
-      </div>
-    )
-  );
-};
-
-
 ```
-[![Edit use-click-away](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/use-click-away-ipxgh?fontsize=14&hidenavigation=1&theme=dark)
+
+## Specification
+
+### `useClickAway()` input
+
+- `clickRef: element` - The dom element to bind our hook.
+- `callback: function` - The callback that runs after user click
+
 
 ## Built With
 

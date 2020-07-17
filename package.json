@@ -12,7 +12,12 @@
     "hooks",
     "react-hooks",
     "click outside",
-    "onclickoutside"
+    "onclickoutside",
+    "click",
+    "domout",
+    "document",
+    "browser",
+    "callback"
   ],
   "main": "index.js",
   "scripts": {

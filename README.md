@@ -35,7 +35,7 @@ export default () => {
 
   return (
     <div ref={clickRef} className="container">
-      <button onClick={() => setModal(true)}>Show Property</button>
+      <button onClick={() => setModal(true)}>Show Modal</button>
       {modal && <Modal>Modal Content</Modal>}
     </div>
   );

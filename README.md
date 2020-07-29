@@ -30,20 +30,16 @@ export default () => {
   const clickRef = React.useRef("");
 
   useClickAway(clickRef, () => {
-     setModal(false);
+    setModal(false);
   });
 
   return (
-    <div className="container">
+    <div ref={clickRef} className="container">
       <button onClick={() => setModal(true)}>Show Property</button>
-      {modal && <Modal
-        modal={modal}
-        setModal={setModal}
-        onClickOutside={onClickOutside}
-      />}
+      {modal && <Modal>Modal Content</Modal>}
     </div>
   );
-};
+}
 
 ```
 

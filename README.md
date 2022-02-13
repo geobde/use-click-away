@@ -12,8 +12,6 @@ Using `npm`:
 npm i use-click-away --save
 ```
 
-[Check the live DEMO](https://reactmoviestore.netlify.app/).
-
 ## Usage
 
 Import the hook:

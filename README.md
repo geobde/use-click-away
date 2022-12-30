@@ -50,7 +50,7 @@ export default () => {
 
 ## Built With
 
-- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [React](https://reactjs.org/)
 
 ## License
 

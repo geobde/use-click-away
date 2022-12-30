@@ -1,6 +1,6 @@
 {
   "name": "use-click-away",
-  "version": "1.0.1",
+  "version": "0.0.1",
   "description": "React hook that triggers a callback when user clicks outside the element.",
   "author": {
     "name": "George Bardi",

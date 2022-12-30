@@ -1,6 +1,6 @@
 # React hook to detect click or touch events
 
-React hook `useClickAway()` reacts to clicks outside the bound element, and calls the expression that is passed in when this event is detected.
+`useClickAway()` reacts to clicks outside the bound element, and calls the expression that is passed in when this event is detected.
 
 Suppose you're working on a Modal component that renders a dialog box, and you wish to close the modal if the user clicks away this is the ideal scenario for `useClickAway()` custom hook.
 
